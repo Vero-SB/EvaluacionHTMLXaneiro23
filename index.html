@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XORNAL NOVAS NEWS - Portada</title>
+    <link rel="stylesheet" href="./CSS/style.css"> 
+    <!--rel indica que é unha folla de estilos , href indica qué arquivo. 
+    pode chamarse style ou como queiras. A páxina inicial de HTML sí debe chamarse index.html-->
+</head>
+
+    <!--podese poñer css no propio html, pero non é nada recomendable.
+    <style>
+        p{
+            font-style: italic;
+        }  
+    -->
+
+<body>
+    <div class="centrado">
+    <header>
+        <h1><a href="./index.html"><img class="alineadomedio centrado" src="./imaxes/logoNews.png"></a> THE NOVAS NEWS </h1>
+            <time class="inline greytext">|| 23/01/2023 ||</time>
+            <address  class="inline greytext">Xornal Novas News - Santiago de Compostela | 600700800 - edicion@novasnews.com ||</address> 
+    </header>
+    </div>   
+    <nav >
+        <ul>
+            <li><a href="./index.html" class="whitetext">Portada</a></li>
+            <li><a href="./seccionSostibilidade.html" class="whitetext">Sostibilidade</li></a>
+            <li><a href="./seccionLocal.html" class="whitetext">Local</li></a>
+            <li><a href="./seccionFakeNews.html" class="whitetext">Fake News</li></a>
+            <li><a href="./form.html" class="whitetext">Login</a></li>
+        </ul>
+    </nav> 
+<main>
+    <p class="titularportada">AS NOSAS SECCIÓNS:</p>
+<section class="cadrado">
+    <h2><a href="./seccionSostibilidade.html" class="bluetext">SOSTIBILIDADE</a></h2>
+        <article class="block">
+            <h3><a href="./artigoMaisMuiños.html" class="blacktext">Máis muíños</a></h3>
+            <p class="cursiva"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et, hic dolores nihil quis quae aliquid. Pariatur amet necessitatibus 
+                cum quo possimus culpa consectetur nam laboriosam ipsa, nemo dolore impedit?</p>
+            <figure class="centrado"><a href="./artigoMaisMuiños.html"> <img class="imaxeartigo" src="./imaxes/muinos.jpeg" alt="Muinos en Vigo">
+            <figcaption class="cursiva greytext">| Muiños en Vigo |</figcaption></a></figure>
+        </article> 
+        <article class="block">
+            <h3><a href="./artigoNovosMateriaisSostibles.html" class="blacktext">Novos materiais sostibles</a></h3>
+            <p class="cursiva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores commodi dicta iusto facilis facere, nostrum ratione, nihil eaque 
+                sint corporis tempore veritatis porro eligendi? Consequuntur dolorem ut voluptate optio?</p>
+        </article>
+        <article class="block">
+            <h3><a href="./artigoViasCiclistasMilladoiro.html" class="blacktext">Vías ciclistas Milladoiro-Santiago</a></h3>
+            <p class="cursiva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officia odit fugit possimus earum autem esse. Earum maiores eveniet at, 
+                odit unde sint quam voluptates quae amet, fugiat autem tempore.</p>
+        </article>
+</section>
+<section class="cadrado">
+    <h2><a href="./seccionLocal.html" class="bluetext">LOCAL</a></h2>
+        <article class="block">
+            <h3><a href="./artigoHoxeEnSantiago.html" class="blacktext">Hoxe en Santiago chove</a></h3>
+            <p class="cursiva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at ea consequatur labore vel, odio quos id suscipit velit, 
+                nostrum aspernatur reiciendis laboriosam ad recusandae eveniet voluptates atque facere explicabo.</p>
+            <figure class="centrado"><a href="artigoHoxeEnSantiago.html"> <img class="imaxeartigo" src="./imaxes/catedral.jpeg" 
+                alt="Chove na Catedral de Santiago de Compostela o 23 de Xaneiro do 23">
+            <figcaption class="cursiva greytext">| Catedral de Santiago con choiva |</figcaption></a></figure>
+        </article> 
+        <article class="block">
+            <h3><a href="./artigoCaeUnhaPonte.html" class="blacktext">Cae unha ponte en Vista Alegre</a></h3>
+            <p class="cursiva">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est ratione autem, vitae error porro nesciunt hic, 
+                incidunt minima praesentium quibusdam qui voluptates, odit laborum itaque sit ut iste nihil.</p>
+        </article>
+</section>
+<section class="cadrado">
+    <h2><a href="./seccionFakeNews.html" class="bluetext imaxeartigo">FAKE NEWS</a></h2>
+        <article class="block">
+            <figure class="centrado"><a href="./seccionFakeNews.html"> 
+                <img class="imaxeartigo" src="./imaxes/logoFakeNews.png" alt="Logo Fake News"></figure>
+            <h3> <a href="./seccionFakeNews.html" class="blacktext"> Non chove en Santiago </a></h3>
+            <p class="alineadoesquerda cursiva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis consequatur. Commodi nam suscipit, 
+                fugit pariatur sit cum a facilis quas dolorum consequatur officiis, sunt veniam quaerat et harum? Facere!</p>
+        </article> 
+</section>
+</main>
+<form class="cadradoinvisible greytext">
+    <fieldset> 
+        <p>Esta páxina web utiliza cookies para o seu desenrolo:</p>
+        <label class="inline"><input type="radio" name="Cookies" value="Todas">Acepto todas as cookies</label>
+        <label class="inline"><input type="radio" name="Cookies" value="Necesarias">Acepto só as cookies necesarias</label>
+        <label class="inline"><input type="radio" name="Cookies" value="Ningunha">Non acepto cookies</label>
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+<footer class="alineadodereita greytext cursiva">Footer Legal: cousas en letra pequena que ninguén le pero poden ser importantes.
+</footer>
+</body>
+</html>

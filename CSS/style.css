@@ -1,0 +1,240 @@
+/* ISTO É UN COMENTARIO PARA CSS 
+podese poñer css no propio html, pero non é recomendable.
+CSS: ESTILOS EN CASCADA: PREDOMINA A ORDE EN QUE ESCRIBES, O ULTIMO MANDA!
+PRIMEIRO APLICO O XERAL E LOGO O MÁIS ESPECÍFICO.
+
+O TAMAÑO CSS SIN MODIFICAR É 1rem, un tamaño natural que se adapta á pantalla, 0.5 REDUCEO Á METADE
+em:TAMAÑO PROPORCIONAL Ó SITIO CONCRETO ONDE ESTA O TEXTO
+rem: TAMAÑO NO DOCUMENTO XERAL
+
+ETIQUETAS BASICAS: 
+
+p{
+    font-style: italic;
+}  
+div > p {       
+    color: red; 
+}  SIGNO MAYOR QUE: INDICA QUE AFECTA SÓ O p QUE É FILLO DO div, INCLUIDO DIRECTAMENTE DENTRO DEL, NON UN NETO.
+
+div p {         TODOS OS QUE ESTAN DENTRO DE div
+    font-size: 0.5rem; 
+    font-family: sans-serif;    SIN SERIF (SERIF É MAIS FORMAL, MARCA COMO UNHA LIÑA NA BASE DA LETRA)
+                                FONT FAMILY NON É PRA MUDAR A TIPOGRAFÍA, POLO MOMENTO SÓ PRA SERIF
+}  
+#molon {        ISTO É UN SELECTOR DE id q temos q asignar ás etiquetas: # PREDOMINA ESTA ORDE ASIGNADA A ALGO CONCRETO. 
+                <p id="molon"<p>parrafo</p>
+                USO NON RECOMENDADO PQ PODE DAR PROBLEMAS POR BAUTIZAR CO MESMO NOME EN GRANDES PROXECTOS. MELLOR CLASS
+    color: orange
+}
+.destacadas  {   ISTO É UN CLASS: <p class="destacadas"> texto </p>
+    background-color: violet;
+}      
+.grises{          ISTO É OUTRO CLASS, SON ACUMULABLES: <p class="destacadas grises"> texto </p>
+    color: gray;
+    display: inline;
+    text-decoration:none;
+}
+
+footer {
+    text-decoration: underline;
+    display:block;
+
+}    
+
+h3, div > h1{           ASÍ POÑEMOS VARIOS SELECTORES Á VEZ, PARA ASIGNAR PROPIEDADES IGUAIS. 
+                        AQUI AFECTA ÓS H3 E OS H1 DENTRO DUN DIV
+    border-style:solid;
+    margin: 1em;
+    padding: 1em;   
+    text-align: center;
+
+PARTES DO BORDE: 
+    border: solid; TODO O BORDE
+    border-bottom: solid; / border-left:solid; / border-top: solid; / border-right: solid 
+    border-radius: 1em; PARA REDONDEAR OS BORDES
+    
+width: 50%; ANCHO
+height: 10em; ALTO
+}
+*/
+
+.imaxeartigo{
+    max-width: 20em;
+    width: 100%;
+    height: 20em;
+    padding: 10px;
+    object-fit: cover; /*amplia a imaxe proporcionalmente para encher as dimensions indicadas de weight e high*/
+  }
+.cursiva{
+    font-style: italic;
+}
+
+.alineadomedio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrado {
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alineadodereita {
+    text-align: right;
+}
+
+.alineadoesquerda{
+    text-align: left;
+}
+
+.alineadoarriba{
+    text-align: top;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    margin: 2em;
+    padding: 1.5em;
+}
+
+.cadrado{
+    border: solid;
+    border-color: rgb(220, 215, 222);
+    margin:4em;
+}
+
+.cadradoinvisible{
+    border: none;
+    margin: 4em;
+    padding: 4em;
+}
+
+.imgizq {
+    float: left;
+    margin-right: 15px;
+  }
+
+.whitetext{
+    color:white;
+}
+
+.blacktext{
+    color:black;
+}
+
+.bluetext{
+    color:rgb(31, 66, 158);
+}
+
+.titularportada{
+    color:rgb(31, 66, 158);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3em;
+}
+
+.greytext{
+    color: gray;
+}
+
+.floatleft {
+    float:left;
+}
+
+div.reset {
+    clear: both;
+  }
+
+h1{
+    text-decoration: underline;
+    color:rgb(31, 66, 158);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 500px;
+    margin-left: 80px;
+}
+
+h2{
+    border: solid;
+    border-color:rgb(31, 66, 158) ;
+    border-radius: 0.5em;
+    margin: 3em;
+    padding: 1em;
+    background-color:white;
+    color:rgb(31, 66, 158);
+    display:inline;
+    margin-left:5px;
+    white-space: nowrap;
+}
+
+h3{
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none; /* Remueve estilos de los links */
+}
+
+ul {
+    display: flex; /* Hacemos flex al ul */
+    justify-content: center; /* centramos en el eje horizontal*/
+    justify-content: space-evenly; /* Aplicamos separación a los elementos dentro del ul */
+    /*margin: 0;
+    padding: 0;*/
+    list-style-type: none;
+    overflow: hidden;
+    flex-wrap: wrap; /*cando minimizamos pantalla os elementos van cara abaixo*/
+}
+
+li{
+    border: solid;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em; 
+    background-color:rgb(31, 66, 158);
+    color:white;
+    font-size: 1.5rem; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+fieldset {
+    margin: 1em;
+    width: auto;
+    border-radius: 0.5em;
+    padding: 2em;
+}
+
+input[type="submit"] 
+{
+    margin: 2em;
+    width: 8em;
+    padding: 0.5%;
+    background-color: grey;
+    color: white;
+    border-radius: 0.5em;
+    align-self: flex-end;
+    }
+
+body{
+    margin: 10px;
+
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="gal">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorgin - The Novas News</title>
+    <link rel="stylesheet" href="./CSS/styleform.css"> 
+    <!--<link rel="stylesheet" href="./CSS/style.css">-->
+</head>
+
+<body>
+    <div class="centrado">
+        <header>
+            <h1><a href="./index.html"><img class="alineadomedio centrado" src="./imaxes/logoNews.png"></a> THE NOVAS NEWS </h1>
+                <time class="inline greytext">|| 23/01/2023 ||</time>
+                <address  class="inline greytext">Xornal Novas News - Santiago de Compostela | 600700800 - edicion@novasnews.com ||</address> 
+        </header>
+        </div>   
+        <nav >
+            <ul>
+                <li><a href="./index.html" class="whitetext">Portada</a></li>
+                <li><a href="./seccionSostibilidade.html" class="whitetext">Sostibilidade</li></a>
+                <li><a href="./seccionLocal.html" class="whitetext">Local</li></a>
+                <li><a href="./seccionFakeNews.html" class="whitetext">Fake News</li></a>
+                <li><a href="./form.html" class="whitetext">Login</a></li>
+            </ul>
+        </nav> 
+    <main>
+    <section class="cadrado">
+    <h2> INICIA SESIÓN </h2>
+<form>
+    <fieldset>
+    <label> Email 
+        <input type="email" name="Email">
+    </label>
+    <label> Contrasinal 
+        <input type="password" name="Contrasinal">
+    </label>
+    </fieldset>
+    <input type="submit" value="Entrar">
+</form>
+</section>
+
+<section class="cadrado">
+    <h2> REXÍSTRATE </h2>       
+<form>
+    <fieldset>
+    <label> Nome Completo
+        <input type="text" name="Nome" placeholder="Escribe o teu nome completo">
+    </label>
+    <label> Email 
+        <input type="email" name="Email" placeholder="Correo electrónico">
+    </label>
+    <label> Contrasinal 
+        <input type="password" name="Contrasinal" placeholder="Mínimo 8 caracteres incluíndo letras, números e símbolos">
+    </label>
+    <label> Verifica o teu contrasinal
+        <input type="password" name="Contrasinal">
+    </label>
+    <label> 
+        <input type="checkbox" name="consentimento">
+        Acepto recibir actualizacións no meu email
+    </label>
+    <label> Comenta o que precises
+        <textarea name="Comentarios" cols="100" rows="10" maxlength="250">
+        </textarea>
+    </label>
+    </fieldset>
+    <input type="submit" value="Suscríbete">
+</form>
+</section>
+</main>
+<form class="cadradoinvisible greytext">
+    <fieldset> 
+        <p>Esta páxina web utiliza cookies para o seu desenrolo:
+        </p>
+        <label class="inline"> 
+            <input type="radio" name="Cookies" value="Todas">
+            Acepto todas as cookies
+        </label>
+        <label class="inline">
+            <input type="radio" name="Cookies" value="Necesarias">
+            Acepto só as cookies necesarias
+        </label>
+        <label class="inline">
+            <input type="radio" name="Cookies" value="Ningunha">
+            Non acepto cookies
+        </label>
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+  
+</body>
+</html>

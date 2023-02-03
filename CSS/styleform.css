@@ -1,0 +1,131 @@
+.greytext{
+    color: gray;
+}
+
+.whitetext{
+    color:white;
+}
+
+.cadrado{
+    border: solid;
+    border-color: rgb(220, 215, 222);
+    margin:4em;
+    padding: 4em;
+}
+
+.cadradoinvisible{
+    border: none;
+    margin: 4em;
+    padding: 4em;
+}
+
+.centrado {
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alineadomedio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline{
+    display: inline;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+h1{
+    text-decoration: underline;
+    color:rgb(31, 66, 158);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 500px;
+    margin-left: 80px;
+}
+
+h2{
+    color:rgb(31, 66, 158);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly; 
+    list-style-type: none;
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+
+li{
+    border: solid;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em; 
+    background-color:rgb(31, 66, 158);
+    color:white;
+    font-size: 1.5rem; 
+}
+
+a {
+    text-decoration: none; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+label {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 1em;
+    padding: 0.5%; 
+    width: 90%;
+
+}
+input[type="text"], input[type="email"], input[type="password"]
+{ 
+    padding: 0.5%;
+    margin-left: 1em;
+    flex-grow: 1;
+}
+
+
+input[type="submit"] 
+{
+    margin: 2em;
+    width: 8em;
+    padding: 0.5%;
+    background-color: rgb(31, 66, 158);
+    color: white;
+    border-radius: 0.5em;
+    align-self: flex-end;
+    }
+
+input[type="checkbox"]
+    {
+        margin-right: 1.5em;
+    }
+
+fieldset {
+    margin: 1em;
+    width: 50em;
+    border-radius: 0.5em;
+    padding: 2em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
